@@ -15,6 +15,8 @@ public class ProjectileMove : MonoBehaviour
     public PROJECTILETYPE projectileType;
 
     protected FxManager FxManager = FxManager.Instance;
+
+    protected AudioManager AudioManager = AudioManager.Instance;
     private void FixedUpdate()
     {
         float moveAmount = 10 * Time.fixedDeltaTime;             //이동 속도 설정
